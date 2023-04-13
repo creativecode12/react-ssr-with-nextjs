@@ -13,7 +13,7 @@ const Users = (props) => {
 
     return (
         <ContainerBlock
-            title="Manu Arora - Developer, Writer, Creator"
+            title="The Developer - Developer, Writer, Creator"
             description="This is a template built specifically for my blog - Creating a developer portfolio that gets you a job."
         >
             <h1>hello users {props?.data}</h1>
