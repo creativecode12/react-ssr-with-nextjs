@@ -11,8 +11,10 @@ export default function DataViewer() {
   }, [])
 
   return (
-    <div className="flex flex-row justify-center items-start overflow-hidden">
-      <h2>This is data viewer {users?.activity}</h2>
+    <div className="row">
+      <div className="col-md-2">
+        <h2>This is data viewer {users?.activity}</h2>
+      </div>
     </div>
   );
 }
