@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
@@ -13,6 +13,18 @@ export default function ContainerBlock({ children, ...customMeta }) {
     type: "website",
     ...customMeta,
   };
+
+  useEffect(() => {
+    var aScript = document.createElement('script');
+    aScript.type = 'text/javascript';
+    aScript.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js';
+    console.log(aScript);
+    document.head.appendChild(aScript);
+    aScript.onload = () => {
+      console.log("boostrap js loaded");
+    };
+  }, [])
+
   return (
     <div>
       <Head>
