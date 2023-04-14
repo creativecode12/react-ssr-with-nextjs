@@ -1,4 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import "../styles/globals.css";
+import '../styles/index.scss';
 import { ThemeProvider } from "next-themes";
 import { Provider } from 'react-redux'
 import { createWrapper } from 'next-redux-wrapper'
